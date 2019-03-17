@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.75"
+        android:scaleY="0.75">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgArticle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/article1"/>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginBottom="-10dp"
+                    android:background="@drawable/bg_shadow"
+                    android:layout_alignBottom="@+id/imgArticle"/>
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nexabold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_alignTop="@+id/view"/>
+
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum is simply dummy text of
+the printing and typesetting industry.
+Lorem Ipsum has been the industry's
+standard dummy. . ."
+                    android:textSize="14sp"
+                    android:layout_below="@+id/tvTitle"
+                    android:fontFamily="@font/nexalight"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/colorWhite"/>
+
+                <Button
+                    android:id="@+id/btReadMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="20dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bt_ui_readmore"
+                    android:fontFamily="@font/nexabold"
+                    android:text="Read More"
+                    android:textSize="12sp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_alignBottom="@+id/imgArticle"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
