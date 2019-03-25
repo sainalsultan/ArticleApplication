@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="-150dp"
+        android:src="@drawable/ellipse" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_marginBottom="-50dp"/>
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -22,22 +37,6 @@
         android:text="A r t i c l e"
         android:textColor="@color/colorBlack"
         android:textSize="18sp" />
-
-    <ImageView
-        android:layout_width="500dp"
-        android:layout_height="500dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="-150dp"
-        android:src="@drawable/ellipse" />
-
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar"
-        android:layout_above="@+id/footer"
-        android:layout_marginBottom="-50dp"/>
 
     <ImageView
         android:id="@+id/footer"

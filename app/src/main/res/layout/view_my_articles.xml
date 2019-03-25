@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgArticle"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/article1"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/imgArticle"
+                android:layout_alignLeft="@id/imgArticle"
+                android:layout_alignRight="@id/imgArticle"
+                android:layout_alignBottom="@id/imgArticle"
+                android:background="#65000000" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:maxLines="1"
+                android:layout_alignBottom="@+id/imgArticle"
+                android:layout_margin="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/colorWhite"
+                android:ellipsize="end"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    
+</RelativeLayout>
